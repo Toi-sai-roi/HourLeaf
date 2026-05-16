@@ -34,13 +34,6 @@ HourLeaf là ứng dụng di động mua sắm thực phẩm (grocery) với đi
 
 ## Cài đặt và chạy ứng dụng
 
-```bash
-git clone https://github.com/Toi-sai-roi/HourLeaf.git
-cd my-app
-npm install
-npx expo start
-Quét mã QR bằng Expo Go trên điện thoại hoặc chạy trên web bằng npx expo start --web.
-
 Tài khoản demo
 Email	Mật khẩu	Vai trò
 tung@shop.com	tung123	User
@@ -65,3 +58,10 @@ Thêm tính năng chat hỗ trợ khách hàng, gợi ý sản phẩm bằng AI
 Tích điểm / Hội viên thân thiết
 
 Cải thiện hiệu năng, phát triển phiên bản iOS riêng biệt
+
+```bash
+git clone https://github.com/Toi-sai-roi/HourLeaf.git
+cd my-app
+npm install
+npx expo start
+Quét mã QR bằng Expo Go trên điện thoại hoặc chạy trên web bằng npx expo start --web.
