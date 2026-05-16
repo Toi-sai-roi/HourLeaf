@@ -34,6 +34,8 @@ HourLeaf là ứng dụng di động mua sắm thực phẩm (grocery) với đi
 
 ## Cài đặt và chạy ứng dụng
 
+
+
 Tài khoản demo
 Email	Mật khẩu	Vai trò
 tung@shop.com	tung123	User
@@ -49,15 +51,15 @@ Link online đã deploy
 🌐 HourLeaf trên Netlify [deploy](https://eclectic-pika-9aa629.netlify.app)
 
 Hướng phát triển
-Tích hợp thanh toán thực tế (VNPay, MoMo, PayPal)
+- Tích hợp thanh toán thực tế (VNPay, MoMo, PayPal)
 
-Kết nối cơ sở dữ liệu trực tuyến (Firebase / backend)
+- Kết nối cơ sở dữ liệu trực tuyến (Firebase / backend)
 
-Thêm tính năng chat hỗ trợ khách hàng, gợi ý sản phẩm bằng AI
+- Thêm tính năng chat hỗ trợ khách hàng, gợi ý sản phẩm bằng AI
 
-Tích điểm / Hội viên thân thiết
+- Tích điểm / Hội viên thân thiết
 
-Cải thiện hiệu năng, phát triển phiên bản iOS riêng biệt
+- Cải thiện hiệu năng, phát triển phiên bản iOS riêng biệt
 
 ```bash
 git clone https://github.com/Toi-sai-roi/HourLeaf.git
