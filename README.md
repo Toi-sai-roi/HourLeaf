@@ -73,7 +73,8 @@ Hình ảnh minh họa
 ![màn chính](assets/index/indexx.png)
 
 Link video demo
-▶ Bấm vào đây để xem video demo
+[▶ Bấm vào đây để xem video demo](https://youtu.be/agNeUtmkkE0)
+
 Link online đã deploy[Link online đã deploy](https://eclectic-pika-9aa629.netlify.app)
 
 
