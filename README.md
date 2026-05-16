@@ -63,7 +63,6 @@ HourLeaf là ứng dụng di động mua sắm thực phẩm (grocery) với đi
 
 ## Cài đặt và chạy ứng dụng
 
-
 Tài khoản demo
 Email	Mật khẩu	Vai trò
 tung@shop.com	tung123	User
@@ -73,7 +72,7 @@ Hình ảnh minh họa
 ![màn chính](assets/index/indexx.png)
 
 Link video demo
-[▶ Bấm vào đây để xem video demo](https://youtu.be/agNeUtmkkE0)
+([▶ Bấm vào đây để xem video demo](https://drive.google.com/drive/folders/1rjTvYiUCcpjOWXUqauatIh6e9ZZM8jma?usp=sharing))
 
 Link online đã deploy[Link online đã deploy](https://eclectic-pika-9aa629.netlify.app)
 
@@ -84,111 +83,6 @@ Hướng phát triển
 - Thêm tính năng chat hỗ trợ khách hàng, gợi ý sản phẩm bằng AI
 - Tích điểm / Hội viên thân thiết
 - Cải thiện hiệu năng, phát triển phiên bản iOS riêng biệt
-
-CẤU TRÚC PROJECT:
-HourLeaf/
-└── my-app/                     # Thư mục gốc của dự án Expo
-    │
-    ├── app/                    # Chứa toàn bộ màn hình (screens) và điều hướng
-    │   ├── (auth)/             # Nhóm màn hình xác thực (đăng nhập, đăng ký, quên mật khẩu)
-    │   │   ├── _layout.tsx     # Điều hướng Stack cho auth
-    │   │   ├── forgot-password.tsx  # Màn hình quên mật khẩu
-    │   │   ├── login.tsx       # Màn hình đăng nhập
-    │   │   ├── onboarding.tsx  # Màn hình giới thiệu (carousel)
-    │   │   ├── sign-up.tsx     # Màn hình đăng ký
-    │   │   └── splash.tsx      # Màn hình chờ khi mở app
-    │   │
-    │   ├── (tabs)/             # Nhóm màn hình chính (dùng bottom tab navigation)
-    │   │   ├── _layout.tsx     # Điều hướng Tab cho các màn chính
-    │   │   ├── account.tsx     # Màn hình tài khoản (thông tin, địa chỉ, thanh toán, order stats)
-    │   │   ├── cart.tsx        # Màn hình giỏ hàng
-    │   │   ├── explore.tsx     # Màn hình khám phá sản phẩm
-    │   │   ├── favourites.tsx  # Màn hình yêu thích
-    │   │   ├── index.tsx       # Màn hình chính (Home) – có mood theo giờ
-    │   │   └── notifications.tsx # Màn hình thông báo (có CTA, xóa nhiều)
-    │   │
-    │   ├── admin/              # Nhóm màn hình dành cho quản trị viên
-    │   │   ├── _layout.tsx     # Điều hướng Stack cho admin
-    │   │   ├── flash-sales.tsx # Quản lý flash sale (CRUD, bật/tắt)
-    │   │   ├── index.tsx       # Dashboard admin (doanh thu, biểu đồ, top sản phẩm)
-    │   │   ├── promos.tsx      # Quản lý mã giảm giá (CRUD, bật/tắt)
-    │   │   └── tags.tsx        # Quản lý tag sản phẩm (gắn tag hàng loạt)
-    │   │
-    │   ├── category/           # Màn hình hiển thị sản phẩm theo danh mục
-    │   │   └── [name].tsx      # Màn hình động theo tên danh mục (trái cây, thịt cá...)
-    │   │
-    │   ├── product/            # Màn hình chi tiết sản phẩm
-    │   │   └── [id].tsx        # Màn hình động theo ID sản phẩm (có đánh giá, flash sale, gợi ý)
-    │   │
-    │   ├── section/            # Màn hình hiển thị sản phẩm theo tag (exclusive, bestselling)
-    │   │   └── [tag].tsx       # Màn hình động theo tag
-    │   │
-    │   ├── _layout.tsx         # Điều hướng tổng thể của toàn app
-    │   ├── checkout.tsx        # Màn hình thanh toán (chọn địa chỉ, phương thức, promo)
-    │   ├── filters.tsx         # Màn hình lọc sản phẩm (theo danh mục, thương hiệu)
-    │   ├── index.tsx           # Màn hình chính (cũ, có thể không dùng)
-    │   ├── modal.tsx           # Modal dùng thử (có thể bỏ)
-    │   ├── order-failed.tsx    # Màn hình đặt hàng thất bại
-    │   ├── order-success.tsx   # Màn hình đặt hàng thành công
-    │   ├── orders.tsx          # Màn hình lịch sử đơn hàng (trạng thái realtime)
-    │   ├── promo.tsx           # Màn hình xem và áp dụng mã giảm giá
-    │   └── search.tsx          # Màn hình tìm kiếm sản phẩm
-    │
-    ├── assets/                 # Chứa toàn bộ tài nguyên tĩnh (ảnh, icon, video...)
-    │   ├── bg/                 # Ảnh nền theo 7 khung giờ
-    │   ├── images/             # Ảnh chung (icon, splash...)
-    │   ├── index/              # Banner hero theo từng khung giờ
-    │   ├── onboarding/         # Ảnh minh hoạ cho màn hình onboarding
-    │   └── scr-sh/             # Ảnh chụp màn hình cho báo cáo
-    │
-    ├── components/             # Các component tái sử dụng
-    │   ├── ui/                 # Các component UI nhỏ (collapsible, icon-symbol)
-    │   ├── DailyRitualCard.tsx # Card nghi lễ theo giờ (có animation, haptic)
-    │   ├── FlashSaleCard.tsx   # Card hiển thị flash sale (theo khung giờ 17h-20h / 21h-23h)
-    │   ├── LiveDealBanner.tsx  # Banner flash sale (thay đổi theo giờ)
-    │   ├── ProductGrid.tsx     # Grid hiển thị sản phẩm (2 cột)
-    │   ├── ProductIcon.tsx     # Component hiển thị icon sản phẩm (ảnh hoặc emoji)
-    │   ├── TimeAwareHeader.tsx # Header hiển thị thời gian và câu vibe
-    │   ├── VibeController.tsx  # Nút LIVE (chọn giờ demo)
-    │   └── VibeOfferCard.tsx   # Card ưu đãi theo giờ (áp dụng mã giảm giá)
-    │
-    ├── constants/              # Các hằng số và cấu hình
-    │   ├── Colors.ts           # Màu sắc chung (Palette, Radius, Spacing)
-    │   ├── icon3D.ts           # Mapping icon 3D (nếu dùng)
-    │   ├── products.ts         # Danh sách sản phẩm (125+ sản phẩm, có tags)
-    │   ├── timeVibeConfig.ts   # Cấu hình mood theo 7 khung giờ
-    │   └── vectorIconMap.ts    # Mapping emoji sang icon vector
-    │
-    ├── context/                # Các Context API quản lý state toàn cục
-    │   ├── AdminContext.tsx    # Quản lý dữ liệu admin (promo, flash sale, tag)
-    │   ├── CartContext.tsx     # Quản lý giỏ hàng, đơn hàng, xác thực, promo, địa chỉ...
-    │   └── TimeDemoContext.tsx # Quản lý chế độ demo (chọn giờ ảo)
-    │
-    ├── dist/                   # Thư mục export để deploy web (tự sinh)
-    │
-    ├── hooks/                  # Các custom hook
-    │   ├── use-color-scheme.ts # Hook lấy màu sắc hệ thống
-    │   ├── use-theme-color.ts  # Hook lấy màu theo theme
-    │   ├── useHaptic.ts        # Hook tạo rung (haptic feedback)
-    │   ├── useStorage.ts       # Hook lưu trữ dữ liệu AsyncStorage
-    │   └── useTimeVibe.ts      # Hook lấy thông tin mood theo giờ thực
-    │
-    ├── node_modules/           # Thư mục chứa các package (tự sinh)
-    │
-    ├── scripts/                # Script phụ trợ
-    │   └── reset-project.js    # Script reset project (dùng khi cần)
-    │
-    ├── services/               # Các dịch vụ lưu trữ và xử lý dữ liệu
-    │   ├── AdminService.ts     # Lưu trữ dữ liệu admin (promo, flash sale, tag) vào AsyncStorage
-    │   └── StorageService.ts   # Lưu trữ dữ liệu user (giỏ hàng, đơn hàng, thông báo, địa chỉ)
-    │
-    ├── .gitignore              # File bỏ qua khi push lên GitHub
-    ├── app.json                # Cấu hình Expo (tên app, icon, splash...)
-    ├── eslint.config.js        # Cấu hình ESLint (kiểm tra lỗi code)
-    ├── expo-env.d.ts           # Khai báo kiểu cho Expo
-    ├── package-lock.json       # File khoá version của các package
-    ├── package.json            # Danh sách dependencies và scripts
-    └── README.md               # Mô tả dự án (tên, cài đặt, tài khoản demo, link video...)
 
 
 ```bash
